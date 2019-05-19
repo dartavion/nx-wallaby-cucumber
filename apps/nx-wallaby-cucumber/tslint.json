@@ -1,0 +1,12 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "nx-wallaby-cucumber",
+      "camelCase"
+    ],
+    "component-selector": [true, "element", "nx-wallaby-cucumber", "kebab-case"]
+  }
+}

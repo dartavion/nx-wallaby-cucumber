@@ -1,0 +1,24 @@
+{
+  "npmScope": "nx-wallaby-cucumber",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "nx-wallaby-cucumber": {
+      "tags": []
+    },
+    "nx-wallaby-cucumber-e2e": {
+      "tags": []
+    },
+    "api": {
+      "tags": []
+    },
+    "api-interface": {
+      "tags": []
+    }
+  }
+}
