@@ -11,7 +11,22 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 
-module.exports = (on: Cypress.Actions, config: Cypress.ConfigOptions) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
+// module.exports = (on: Cypress.Actions, config: Cypress.ConfigOptions) => {
+//   // `on` is used to hook into various events Cypress emits
+//   // `config` is the resolved Cypress config
+// };
+const path = require('path');
+const wp = require('@cypress/webpack-preprocessor');
+const cucumber = require('cypress-cucumber-preprocessor').default;
+module.exports = (on, config) => {
+  console.log(config);
+  const options = {
+    webpackOptions: require(path.join(__dirname, 'webpack-cypress.js')),
+  };
+  on('file:preprocessor', () => {
+    console.log('moooooooOOOOOOOOOO')
+  });
+  on('file:preprocessor', wp(options));
+  on('file:preprocessor', cucumber())
 };
+
