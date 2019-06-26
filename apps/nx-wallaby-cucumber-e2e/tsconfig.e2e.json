@@ -2,7 +2,7 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "sourceMap": false,
-    "outDir": "../../dist/out-tsc/apps/nx-wallaby-cucumber-e2e/src"
+    "outDir": "../../dist/out-tsc"
   },
   "include": ["src/**/*.ts"]
 }

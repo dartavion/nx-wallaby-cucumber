@@ -19,12 +19,14 @@ const path = require('path');
 const wp = require('@cypress/webpack-preprocessor');
 const cucumber = require('cypress-cucumber-preprocessor').default;
 module.exports = (on, config) => {
-  console.log(config);
+  console.log(
+    'moooooooeeoqwoooo', path.join(__dirname, 'webpack-cypress.js')
+  );
   const options = {
-    webpackOptions: require(path.join(__dirname, 'webpack-cypress.js')),
+    webpackOptions: '../webpack-cypress.js',
   };
   on('file:preprocessor', () => {
-    console.log('moooooooOOOOOOOOOO')
+    console.log('boooooooOOOOOOOOOO')
   });
   on('file:preprocessor', wp(options));
   on('file:preprocessor', cucumber())
