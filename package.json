@@ -40,7 +40,7 @@
     "@nestjs/common": "^6.2.4",
     "@nestjs/core": "^6.2.4",
     "core-js": "^2.5.4",
-    "electron": "^5.0.1",
+    "electron": "^9.4.0",
     "rxjs": "6.5.2",
     "zone.js": "~0.9.1",
     "@nestjs/platform-express": "^6.2.4",
